@@ -1,31 +1,10 @@
-.current {
-  color: #752E27;
-}
+.current { color: #752E27; }
 
-.kranky-regular {
-  font-family: "Kranky", serif;
-  font-weight: 400;
-  font-style: normal;
-}
+.kranky-regular { font-family: "Kranky", serif; font-weight: 400; font-style: normal; }
 
-.mclaren-regular {
-  font-family: "McLaren", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
+.mclaren-regular { font-family: "McLaren", sans-serif; font-weight: 400; font-style: normal; }
 
-html, body {
-  background-color: #f6f5ef;
-}
-html h1, html h2, html h3, html h4, html h5, html h6, body h1, body h2, body h3, body h4, body h5, body h6 {
-  font-family: "Kranky", serif;
-}
-html p, html div, body p, body div {
-  font-family: "McLaren", sans-serif;
-  font-size: 16px;
-}
-html p a, html div a, body p a, body div a {
-  color: #957351;
-}
-
-/*# sourceMappingURL=styles.css.map */
+html, body { background-color: #f6f5ef; }
+html h1, html h2, html h3, html h4, html h5, html h6, body h1, body h2, body h3, body h4, body h5, body h6 { font-family: "Kranky", serif; }
+html p, html div, body p, body div { font-family: "McLaren", sans-serif; font-size: 16px; }
+html p a, html div a, body p a, body div a { color: #957351; }
