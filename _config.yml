@@ -1,7 +1,7 @@
 title: Decatur Supper Club
 description: The Decatur Supper Club is a potluck-style gathering of friends, new and old, sharing meals and building community in and around Decatur, GA.
 theme: jekyll-theme-minimal
-baseurl: "/"
+baseurl: ""
 url: "https://decatursupperclub.github.io"
 
 plugins:
