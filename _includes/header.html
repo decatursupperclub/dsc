@@ -1,11 +1,20 @@
 <header class="site-header">
-
-  <div class="wrapper">
+  <div class="nav-menu wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
-    <a class="nav-menu site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
-    <div class="nav-menu site-subtitle">Est. 2025</div>
-    {% include navigation.html %}
+    <div><a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a></div>
+      <input id="toggle" type="checkbox"></input>
+        <label for="toggle" class="hamburger">
+          <div class="top-bun"></div>
+          <div class="meat"></div>
+          <div class="bottom-bun"></div>
+        </label>
+    <div class="nav-links nav">
+      <div class="nav-wrapper">
+      {% include navigation.html %}
+      </div>
+    </div>
+    <div class="site-subtitle">Est. 2025</div>
   </div>
 </header>
