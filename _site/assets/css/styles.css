@@ -55,10 +55,14 @@ nav a:hover:before { height: 100%; }
 
 /** End Google Font CSS classes **/
 /** Begin basic font stylings across the site **/
-html, body { background-color: #f6f5ef; }
+html, body { background-color: #f6f5ef; display: flex; flex-direction: column; min-height: 100vh; }
 html h1, html h2, html h3, html h4, html h5, html h6, body h1, body h2, body h3, body h4, body h5, body h6 { font-family: "Kranky", serif; }
 html p, html div, body p, body div { font-family: "McLaren", sans-serif; font-size: 16px; }
 html p a, html div a, body p a, body div a { text-decoration: underline; color: black; }
+
+.page-content, main { flex: 1 0 auto; }
+
+.site-footer { flex-shrink: 0; }
 
 /** End basic font stylings across the site **/
 /** Begin basic visual and layout styling across the site **/
