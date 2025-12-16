@@ -17,6 +17,7 @@
 }
 
 .site-title {
+  grid-area: site-title;
   font-family: $font-headings, serif;
   font-size: 1.5em;
   color: $primary-brand-color;
@@ -29,15 +30,16 @@
 }
 
 .site-subtitle {
+  grid-area: site-subtitle;
   font-family: $font-body, sans-serif;
   font-size: 0.75em;
-  margin-left: 10px;
   align-self: center;
   justify-self: start;
   font-style: italic;
 }
 
 .nav-links {
+  grid-area: nav-links;
   display: inline;
   justify-self: end;
   align-self: center;
@@ -222,16 +224,53 @@ p, div {
   padding: 1em;
 }
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1em;
+  align-items: flex-start;
+  justify-content: normal;
+  align-content: stretch;
+  margin-top: 2em;
+}
+
+
+.flex-items:nth-child(1) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+.flex-items:nth-child(2) {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+  order: 0;
+}
+
+@media (max-width: 768px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
 .sign-up {
   padding: 5em 2em 2em 2em;
-  text-align: center;
+  text-align: left;
   margin-bottom: 2em;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
               url('/assets/images/zac-cain-YsHdlBSnsec-unsplash.avif');
   background-size: cover;
   background-position: center;
-  
-  h1, div {
+  justify-content: center;
+
+  div {
     max-width: 800px;
     color: white;
     margin-left: auto;
@@ -242,6 +281,7 @@ p, div {
   a, button {
     display: inline-block;
     width: auto;
+    color: $accent-color !important;
   }
 }
 

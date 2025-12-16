@@ -3,13 +3,13 @@
 
 .current { color: #469e0e; }
 
-.site-title { font-family: "Kranky", serif, serif; font-size: 1.5em; color: #cd293a; text-transform: uppercase; }
+.site-title { grid-area: site-title; font-family: "Kranky", serif, serif; font-size: 1.5em; color: #cd293a; text-transform: uppercase; }
 
 .site-title a { text-decoration: none !important; color: #cd293a; }
 
-.site-subtitle { font-family: "McLaren", sans-serif, sans-serif; font-size: 0.75em; margin-left: 10px; align-self: center; justify-self: start; font-style: italic; }
+.site-subtitle { grid-area: site-subtitle; font-family: "McLaren", sans-serif, sans-serif; font-size: 0.75em; align-self: center; justify-self: start; font-style: italic; }
 
-.nav-links { display: inline; justify-self: end; align-self: center; text-transform: uppercase; font-size: 0.9em; font-weight: bold; }
+.nav-links { grid-area: nav-links; display: inline; justify-self: end; align-self: center; text-transform: uppercase; font-size: 0.9em; font-weight: bold; }
 .nav-links a { margin-left: 15px; text-decoration: none; }
 .nav-links a:hover { text-decoration: underline !important; }
 
@@ -70,9 +70,16 @@ html p a, html div a, body p a, body div a { text-decoration: underline; color: 
 
 .section-wrapper { max-width: 800px; margin: 0 auto; padding: 1em; }
 
-.sign-up { padding: 5em 2em 2em 2em; text-align: center; margin-bottom: 2em; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/zac-cain-YsHdlBSnsec-unsplash.avif"); background-size: cover; background-position: center; /* Style the button to only span its content */ }
-.sign-up h1, .sign-up div { max-width: 800px; color: white; margin-left: auto; margin-right: auto; }
-.sign-up a, .sign-up button { display: inline-block; width: auto; }
+.flex-container { display: flex; flex-direction: row; flex-wrap: nowrap; gap: 1em; align-items: flex-start; justify-content: normal; align-content: stretch; margin-top: 2em; }
+
+.flex-items:nth-child(1) { display: block; flex-grow: 0; flex-shrink: 1; flex-basis: auto; align-self: auto; order: 0; }
+
+.flex-items:nth-child(2) { display: block; flex-grow: 0; flex-shrink: 1; flex-basis: auto; align-self: auto; order: 0; }
+
+@media (max-width: 768px) { .flex-container { flex-direction: column; } }
+.sign-up { padding: 5em 2em 2em 2em; text-align: left; margin-bottom: 2em; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/zac-cain-YsHdlBSnsec-unsplash.avif"); background-size: cover; background-position: center; justify-content: center; /* Style the button to only span its content */ }
+.sign-up div { max-width: 800px; color: white; margin-left: auto; margin-right: auto; }
+.sign-up a, .sign-up button { display: inline-block; width: auto; color: #ffffff !important; }
 
 .button { background-color: #cd293a; color: #ffffff; padding: 10px 15px; text-decoration: none !important; text-transform: uppercase; width: fit-content; margin: 1em 0em 1em 0em; }
 .button a { color: #ffffff !important; text-decoration: none !important; }
