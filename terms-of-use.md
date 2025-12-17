@@ -4,7 +4,7 @@ title: Terms of Use
 description: 
 robots: index
 ---
-*Last updated:* December 8, 2025
+*Last updated:* December 16, 2025
 
 Welcome to the Decatur Supper Club! We’re a community-organized group of people who enjoy hosting and attending potluck-style dinner gatherings. We’re not a business, we don’t charge money, and we don’t operate as a legal entity. This website simply helps new people discover the club and lets interested folks sign up.
 
@@ -23,7 +23,7 @@ We want the club to feel safe, welcoming, and fun. So:
 - If someone violates these standards, we may remove them from the club or block access to events and communications.
 
 ## 3. What This Website Does
-The site includes a Sign Up button that links you to a Jotform form. When you fill it out, you’re sharing information with both Jotform and with us. Jotform is a secure, reputable platform for building forms to collect data, but if you have any questions or concerns about how your data is processed and stored through Jotform, refer to its [Terms & Conditions](https://www.jotform.com/terms/){:target="_blank"}.
+The site includes a Subscribe form powered by Buttondown, the email newsletter software tool we use to manage and maintain our email communications with members. When you fill it out and click Subscribe, your information is shared with us through Buttondown. Buttondown is a secure, reputable platform for managing email newsletters, but if you have any questions or concerns about how your data is processed and stored through Buttondown, refer to its [Privacy Policy](https://buttondown.com/legal/privacy){:target="_blank"}.
 
 We communicate with members only by email.
 
